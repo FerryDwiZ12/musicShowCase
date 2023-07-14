@@ -1,0 +1,146 @@
+body {
+  /* background-color: #151515; */
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  background-color: #2e2e2e;
+}
+
+.logo a {
+  color: #46cb8e;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.list a {
+  cursor: pointer;
+  color: #e4e4e4;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.list a:hover {
+  color: #46cb8e;
+}
+
+.delete-button {
+  background: url("icon/sampah.png") no-repeat;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.edit-button {
+  background: url("icon/sampah.png") no-repeat;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 120px;
+  align-items: center;
+  height: 100%;
+  padding-right: 120px;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  padding-right: 120px;
+  padding-left: 120px;
+  justify-content: end;
+  text-decoration: none;
+}
+
+.add-data-button {
+  padding: 10px 20px;
+  background-color: #46cb8e;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logo-container {
+  margin-left: 10px;
+}
+
+.logo-container img {
+  width: 20px;
+  height: 20px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 17px;
+}
+
+.data-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.data-info {
+  display: flex;
+  align-items: center;
+}
+
+.data-info img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.info h3,
+.info p {
+  margin: 0;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.edit-button,
+.delete-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: #ff5959;
+}
+
+.edit-button {
+  background-color: #0085ff;
+}
+
+.edit-button img,
+.delete-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.song-list {
+  padding-right: 120px;
+  padding-left: 120px;
+}

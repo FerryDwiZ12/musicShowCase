@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/css/addData.css" />
+    <title>Add Data Music</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Tambah Data</h2>
+      <form action="/tambah-data" method="post">
+        <div class="form-group">
+          <label for="Img_url">Img_url:</label>
+          <input type="text" id="Img_url" name="Img_url" placeholder="Masukkan Img_url" />
+        </div>
+        <div class="form-group">
+          <label for="Title">Title:</label>
+          <input type="text" id="Title" name="Title" placeholder="Masukkan Title" />
+        </div>
+        <div class="form-group">
+          <label for="Artists">Artists:</label>
+          <input type="text" id="Artists" name="Artists" placeholder="Masukkan Artists" />
+        </div>
+        <div class="form-group">
+          <label for="Url">URL:</label>
+          <input type="text" id="URL" name="URL" placeholder="Masukkan URL" />
+        </div>
+        <div style="padding-top: 20px;" class="form-group">
+          <input href="/olahMusic" type="submit" value="Tambah Data" class="submit-button"></input>
+        </div>
+        <div class="form-group">
+          <a href="/olahMusic" class="submit-button-cancel">Cancel</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

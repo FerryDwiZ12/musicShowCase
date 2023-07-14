@@ -1,0 +1,85 @@
+body {
+  background-color: #151515;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 157px;
+  margin-right: 157px;
+  margin-top: 100px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  background-color: #2e2e2e;
+}
+
+.logo a {
+  color: #46cb8e;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.list a {
+  cursor: pointer;
+  color: #e4e4e4;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.list a:hover {
+  color: #46cb8e;
+}
+
+.card-song {
+  background-color: #2e2e2e;
+  height: 366px;
+  display: flex;
+  flex-direction: column;
+  width: 268px;
+  border-radius: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 120px;
+  align-items: center;
+  height: 100%;
+  padding-right: 120px;
+}
+
+.img-song img {
+  padding-left: 14px;
+  width: 243px;
+  height: 202px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-top: 14px;
+}
+
+.title-song h2 {
+  color: #e4e4e4;
+  margin-left: 14px;
+  margin-top: 4px;
+}
+
+.artis-song {
+  color: #a6a6a6;
+  margin-left: 14px;
+  margin-top: -30px;
+}
+
+audio {
+  margin-left: 14px;
+  border-radius: 1px;
+  overflow: hidden;
+}

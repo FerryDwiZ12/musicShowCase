@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Play Music</title>
+    <script src="/send_url.js"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="logo">
+          <a href="/data">PlaySongs</a>
+        </div>
+        <div class="list">
+          <a href="/olahMusic">olah music</a>
+        </div>
+      </div>
+    </nav>
+    <div class="content">
+      <%songs.forEach((song) => { %>
+      <div class="card-song">
+        <div class="img-song">
+          <img src="<%= song.Img_url %>" alt="" />
+        </div>
+        <div class="title-song">
+          <h2><%= song.Title %></h2>
+        </div>
+        <div class="artis-song">
+          <p><%= song.Artists %></p>
+        </div>
+        <div class="song">
+          <audio controls style="height: 53px; width: 243px" src="<%= song.URL %>">
+            <p>If you are reading this, it is because your browser does not support the audio element.</p>
+          </audio>
+        </div>
+      </div>
+      <% }); %>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>olah music</title>
+    <link rel="stylesheet" href="/css/olahMusic.css" />
+  </head>
+  <body>
+    <nav>
+        <div class="navbar">
+          <div class="logo">
+            <a href="/data">PlaySongs</a>
+          </div>
+          <div class="list">
+            <a href="/olahMusic">olah music</a>
+          </div>
+        </div>
+      </nav>
+    </nav>
+    <h1>Ini Olah music</h1>
+    <div class="button-container">
+        <a href="/addData" class="add-data-button">Tambah Data</a>
+    </div>
+    <div class="song-list">
+        <table class="data-table">
+            <%songs.forEach((song) => { %>
+            <tr class="tabel-row">
+              <td>
+                <div class="data-info">
+                  <img src="<%= song.Img_url %>" alt="Gambar">
+                  <div class="info">
+                    <h3><%= song.Title %></h3>
+                    <p><%= song.Artists %></p>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="action-buttons">
+                  <form action="/edit" method="GET">
+                    <input type="hidden" name="id" value="<%= song._id %>">
+                    <input type="image" src="icon/edit.png" class="edit-button">
+                  </form>
+                  <form action="/hapus-data/<%= song.id %>" method="post">
+                    <input type="image" src="icon/sampah.png" alt="Delete" class="delete-button">
+                  </form>
+                </div>
+              </td>
+            </tr>
+            <% }); %>
+          </table>
+    </div>
+  </body>
+</html>
